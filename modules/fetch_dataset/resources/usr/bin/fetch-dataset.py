@@ -5,6 +5,7 @@ import json
 
 import numpy as np
 import pandas as pd
+import papermill as pm
 
 if __name__ == '__main__':
     # parse command-line arguments
@@ -18,11 +19,18 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    import papermill as pm
+    import os
+
+    # get the current working directory
+    current_working_directory = os.getcwd()
+
+    # print output to the console
+    module_directory = current_working_directory.split("work")[0] + 'modules/fetch_dataset/resources/usr/bin/'
+    print(module_directory)
 
     pm.execute_notebook(
-        'run_BO.ipynb',
-        'output.ipynb',
+        module_directory + 'run_BO.ipynb',
+        module_directory + 'output.ipynb',
         parameters=dict(project_id=args.project_id, opt_run_id=args.opt_run_id, token=args.token, base_url = args.base_url)
     )
 

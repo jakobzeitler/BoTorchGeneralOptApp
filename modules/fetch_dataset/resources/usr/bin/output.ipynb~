@@ -1,0 +1,118 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4d9f8695",
+   "metadata": {
+    "collapsed": true,
+    "execution": {
+     "iopub.execute_input": "2024-01-11T17:36:12.114948Z",
+     "iopub.status.busy": "2024-01-11T17:36:12.114264Z",
+     "iopub.status.idle": "2024-01-11T17:36:12.132610Z",
+     "shell.execute_reply": "2024-01-11T17:36:12.130126Z"
+    },
+    "papermill": {
+     "duration": 0.026752,
+     "end_time": "2024-01-11T17:36:12.134826",
+     "exception": false,
+     "start_time": "2024-01-11T17:36:12.108074",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": [
+     "parameters"
+    ]
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-99, -99, 'ABCDF', 'no.base.url']\n"
+     ]
+    }
+   ],
+   "source": [
+    "project_id = -99\n",
+    "opt_run_id = -99\n",
+    "token = 'ABCDF'\n",
+    "base_url = \"no.base.url\"\n",
+    "\n",
+    "print([project_id, opt_run_id, token, base_url])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "bfe57567",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-11T17:36:12.137465Z",
+     "iopub.status.busy": "2024-01-11T17:36:12.137291Z",
+     "iopub.status.idle": "2024-01-11T17:36:12.139461Z",
+     "shell.execute_reply": "2024-01-11T17:36:12.139127Z"
+    },
+    "papermill": {
+     "duration": 0.004604,
+     "end_time": "2024-01-11T17:36:12.140557",
+     "exception": false,
+     "start_time": "2024-01-11T17:36:12.135953",
+     "status": "completed"
+    },
+    "tags": [
+     "injected-parameters"
+    ]
+   },
+   "outputs": [],
+   "source": [
+    "# Parameters\n",
+    "project_id = \"181\"\n",
+    "opt_run_id = \"217\"\n",
+    "token = \"1e9549ad7e940941de51ddff92b1dc9cbe896e98b039644b9eff165e0dec9e55\"\n",
+    "base_url = \"https://mhs.ngrok.app/\"\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "celltoolbar": "Tags",
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 1.05507,
+   "end_time": "2024-01-11T17:36:12.256437",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/modules/fetch_dataset/resources/usr/bin/run_BO.ipynb",
+   "output_path": "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/modules/fetch_dataset/resources/usr/bin/output.ipynb",
+   "parameters": {
+    "base_url": "https://mhs.ngrok.app/",
+    "opt_run_id": "217",
+    "project_id": "181",
+    "token": "1e9549ad7e940941de51ddff92b1dc9cbe896e98b039644b9eff165e0dec9e55"
+   },
+   "start_time": "2024-01-11T17:36:11.201367",
+   "version": "2.4.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
