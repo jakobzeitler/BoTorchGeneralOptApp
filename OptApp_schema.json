@@ -1,0 +1,15 @@
+{
+  "title": "Options",
+  "type": "object",
+  "required": [
+    "batch_size"
+  ],
+  "properties": {
+    "batch_size": {
+      "type": "integer",
+      "default": 1,
+      "minimum": 1,
+      "maximum": 10000
+    }
+  }
+}

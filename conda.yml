@@ -1,0 +1,15 @@
+name: MSFlow-BoTorch
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - pip
+  - git
+  - papermill
+  - jupyterlab
+  - pip:
+      - git+https://github.com/matterhorn-studio/MHSapi.git
+      - git+https://github.com/pytorch/botorch.git
+      #-e /Users/jakobzeitler/MatterhornStudioLocalDev/MHSapi/MHSapi
