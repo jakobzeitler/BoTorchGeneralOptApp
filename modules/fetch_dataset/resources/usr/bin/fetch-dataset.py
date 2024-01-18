@@ -31,6 +31,7 @@ if __name__ == '__main__':
     import glob
     print(glob.glob(module_directory + "/*"))
     print(os.path.dirname(os.path.realpath(__file__)))
+    print(glob.glob(os.path.dirname(os.path.realpath(__file__)) + "/*"))
     pm.execute_notebook(
         module_directory + 'run_BO.ipynb',
         module_directory + 'output.ipynb',
