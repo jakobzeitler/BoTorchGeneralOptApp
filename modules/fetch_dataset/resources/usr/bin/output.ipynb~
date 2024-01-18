@@ -3,20 +3,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "4d9f8695",
+   "id": "cdc6215a",
    "metadata": {
-    "collapsed": true,
     "execution": {
-     "iopub.execute_input": "2024-01-11T17:36:12.114948Z",
-     "iopub.status.busy": "2024-01-11T17:36:12.114264Z",
-     "iopub.status.idle": "2024-01-11T17:36:12.132610Z",
-     "shell.execute_reply": "2024-01-11T17:36:12.130126Z"
+     "iopub.execute_input": "2024-01-18T10:09:27.163436Z",
+     "iopub.status.busy": "2024-01-18T10:09:27.163258Z",
+     "iopub.status.idle": "2024-01-18T10:09:27.167425Z",
+     "shell.execute_reply": "2024-01-18T10:09:27.167010Z"
     },
     "papermill": {
-     "duration": 0.026752,
-     "end_time": "2024-01-11T17:36:12.134826",
+     "duration": 0.007791,
+     "end_time": "2024-01-18T10:09:27.168616",
      "exception": false,
-     "start_time": "2024-01-11T17:36:12.108074",
+     "start_time": "2024-01-18T10:09:27.160825",
      "status": "completed"
     },
     "pycharm": {
@@ -26,40 +25,31 @@
      "parameters"
     ]
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "[-99, -99, 'ABCDF', 'no.base.url']\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
-    "project_id = -99\n",
-    "opt_run_id = -99\n",
-    "token = 'ABCDF'\n",
-    "base_url = \"no.base.url\"\n",
-    "\n",
-    "print([project_id, opt_run_id, token, base_url])"
+    "# Parameters, to be overwritten by papermill when run as nextflow pipeline\n",
+    "project_id = \"1\"\n",
+    "opt_run_id = \"1\"\n",
+    "token = \"1e9549ad7e940941de51ddff92b1dc9cbe896e98b039644b9eff165e0dec9e55\"\n",
+    "base_url = \"https://mhs.ngrok.app/\""
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "bfe57567",
+   "id": "6cbcd981",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-01-11T17:36:12.137465Z",
-     "iopub.status.busy": "2024-01-11T17:36:12.137291Z",
-     "iopub.status.idle": "2024-01-11T17:36:12.139461Z",
-     "shell.execute_reply": "2024-01-11T17:36:12.139127Z"
+     "iopub.execute_input": "2024-01-18T10:09:27.171470Z",
+     "iopub.status.busy": "2024-01-18T10:09:27.171315Z",
+     "iopub.status.idle": "2024-01-18T10:09:27.173402Z",
+     "shell.execute_reply": "2024-01-18T10:09:27.173099Z"
     },
     "papermill": {
-     "duration": 0.004604,
-     "end_time": "2024-01-11T17:36:12.140557",
+     "duration": 0.004581,
+     "end_time": "2024-01-18T10:09:27.174409",
      "exception": false,
-     "start_time": "2024-01-11T17:36:12.135953",
+     "start_time": "2024-01-18T10:09:27.169828",
      "status": "completed"
     },
     "tags": [
@@ -70,9 +60,397 @@
    "source": [
     "# Parameters\n",
     "project_id = \"181\"\n",
-    "opt_run_id = \"217\"\n",
+    "opt_run_id = \"218\"\n",
     "token = \"1e9549ad7e940941de51ddff92b1dc9cbe896e98b039644b9eff165e0dec9e55\"\n",
     "base_url = \"https://mhs.ngrok.app/\"\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "68ad715c",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:27.176974Z",
+     "iopub.status.busy": "2024-01-18T10:09:27.176863Z",
+     "iopub.status.idle": "2024-01-18T10:09:27.513473Z",
+     "shell.execute_reply": "2024-01-18T10:09:27.512639Z"
+    },
+    "papermill": {
+     "duration": 0.339464,
+     "end_time": "2024-01-18T10:09:27.514943",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:27.175479",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/work/55/15add8fe2e9ae1f7faeaf30f351d2d', '/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python310.zip', '/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python3.10', '/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python3.10/lib-dynload', '', '/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python3.10/site-packages']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Packages\n",
+    "import sys\n",
+    "print(sys.path)\n",
+    "import json\n",
+    "\n",
+    "import numpy as np\n",
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "e99d9854",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:27.518126Z",
+     "iopub.status.busy": "2024-01-18T10:09:27.517832Z",
+     "iopub.status.idle": "2024-01-18T10:09:29.012740Z",
+     "shell.execute_reply": "2024-01-18T10:09:29.012381Z"
+    },
+    "papermill": {
+     "duration": 1.497859,
+     "end_time": "2024-01-18T10:09:29.014092",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:27.516233",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "BASE URL: https://mhs.ngrok.app/\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.0.2\n",
+      "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python3.10/site-packages/MHSapi/__init__.py\n",
+      "['MHSapi', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__']\n",
+      "['__class__', '__delattr__', '__dir__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'experiment_data', 'experiment_update_data', 'experiments_create', 'experiments_list', 'get_base_url', 'open_experiment', 'opt_run_list', 'parameters_create', 'parameters_list']\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{}\n",
+      "[Experiment(id=181, url='http://localhost:8000/experiments/181/', name_text='Photonite-2024', data_table_json=''), Experiment(id=180, url='http://localhost:8000/experiments/180/', name_text='Photonite-2024', data_table_json=''), Experiment(id=179, url='http://localhost:8000/experiments/179/', name_text='Photonite-2024', data_table_json=''), Experiment(id=178, url='http://localhost:8000/experiments/178/', name_text='Photonite-2024', data_table_json=''), Experiment(id=177, url='http://localhost:8000/experiments/177/', name_text='Photonite-2024', data_table_json=''), Experiment(id=176, url='http://localhost:8000/experiments/176/', name_text='Photonite-2024', data_table_json=''), Experiment(id=170, url='http://localhost:8000/experiments/170/', name_text='Photonite-2023', data_table_json=''), Experiment(id=162, url='http://localhost:8000/experiments/162/', name_text='SyngasFermentationSim', data_table_json=''), Experiment(id=161, url='http://localhost:8000/experiments/161/', name_text='Photonite-2023', data_table_json='')]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Initialise API client\n",
+    "import MHSapi\n",
+    "from MHSapi.MHSapi import MHSapiClient\n",
+    "from importlib.metadata import version\n",
+    "\n",
+    "client = MHSapi.MHSapi.MHSapiClient(token=token, base_url=base_url)\n",
+    "print(version('MHSapi'))\n",
+    "print(MHSapi.__file__)\n",
+    "print(dir(MHSapi))\n",
+    "object_methods = [method_name for method_name in dir(client)\n",
+    "                  if callable(getattr(client, method_name))]\n",
+    "print(object_methods)\n",
+    "\n",
+    "projects = client.experiments_list()\n",
+    "project = [p for p in projects if int(p.id) == int(project_id)][0]\n",
+    "parameters = client.parameters_list(project)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8a59a3e2",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:29.017180Z",
+     "iopub.status.busy": "2024-01-18T10:09:29.017021Z",
+     "iopub.status.idle": "2024-01-18T10:09:29.517409Z",
+     "shell.execute_reply": "2024-01-18T10:09:29.517050Z"
+    },
+    "papermill": {
+     "duration": 0.503084,
+     "end_time": "2024-01-18T10:09:29.518533",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:29.015449",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{\"import_timestamp\":{\"0\":1704909395.6911211014,\"1\":1704909395.6911211014,\"2\":1704909395.6911211014,\"3\":1704909395.6911211014,\"4\":1704909395.6911211014,\"5\":1704909395.6911211014,\"6\":1704909395.6911211014,\"7\":1704909395.6911211014,\"8\":1704909395.6911211014},\"disabled\":{\"0\":0.0,\"1\":0.0,\"2\":0.0,\"3\":0.0,\"4\":0.0,\"5\":0.0,\"6\":0.0,\"7\":0.0,\"8\":0.0},\"Temperature (Celsius)\":{\"0\":10.5,\"1\":12.3,\"2\":11.7,\"3\":25.5,\"4\":28.0,\"5\":15.0,\"6\":13.5,\"7\":25.0,\"8\":26.8},\"Biomass Yield (g\\/m3)\":{\"0\":910.6302258842,\"1\":955.2308874596,\"2\":934.0850461644,\"3\":977.3216897534,\"4\":918.4279047088,\"5\":962.6146346605,\"6\":959.1759260206,\"7\":979.7014651398,\"8\":946.5538356882}}\n",
+      "Data\n",
+      "   import_timestamp  disabled  Temperature (Celsius)  Biomass Yield (g/m3)\n",
+      "0      1.704909e+09         0                   10.5            910.630226\n",
+      "1      1.704909e+09         0                   12.3            955.230887\n",
+      "2      1.704909e+09         0                   11.7            934.085046\n",
+      "3      1.704909e+09         0                   25.5            977.321690\n",
+      "4      1.704909e+09         0                   28.0            918.427905\n",
+      "5      1.704909e+09         0                   15.0            962.614635\n",
+      "6      1.704909e+09         0                   13.5            959.175926\n",
+      "7      1.704909e+09         0                   25.0            979.701465\n",
+      "8      1.704909e+09         0                   26.8            946.553836\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2. Download dataset\n",
+    "dataset = client.experiment_data(project)\n",
+    "print(\"Data\")\n",
+    "print(dataset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e19f78be",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:29.521738Z",
+     "iopub.status.busy": "2024-01-18T10:09:29.521526Z",
+     "iopub.status.idle": "2024-01-18T10:09:29.729006Z",
+     "shell.execute_reply": "2024-01-18T10:09:29.728668Z"
+    },
+    "papermill": {
+     "duration": 0.210539,
+     "end_time": "2024-01-18T10:09:29.730374",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:29.519835",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[OptimisationRun(id=215, experiment=181, opt_app=None, run_options=Xc2ef1593_308e_4caf_ac27_e5db48363025(root={})), OptimisationRun(id=216, experiment=181, opt_app=3, run_options=Xc2ef1593_308e_4caf_ac27_e5db48363025(root={'batch_size': 1})), OptimisationRun(id=217, experiment=181, opt_app=3, run_options=Xc2ef1593_308e_4caf_ac27_e5db48363025(root={'batch_size': 3})), OptimisationRun(id=218, experiment=181, opt_app=3, run_options=Xc2ef1593_308e_4caf_ac27_e5db48363025(root={'batch_size': 1}))]\n",
+      "id=218 experiment=181 opt_app=3 run_options=Xc2ef1593_308e_4caf_ac27_e5db48363025(root={'batch_size': 1})\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/tmp/ipykernel_97615/4232612496.py:11: PydanticDeprecatedSince20: The `json` method is deprecated; use `model_dump_json` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.5/migration/\n",
+      "  run_options = json.loads(opt_run.run_options.json())\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 3. Get OptApp options\n",
+    "\n",
+    "opt_runs = client.opt_run_list(project)\n",
+    "print(opt_runs)\n",
+    "opt_run = [p for p in opt_runs if int(p.id) == int(opt_run_id)][0]\n",
+    "print(opt_run)\n",
+    "#type = type(opt_run.run_options)\n",
+    "#method_list = [func for func in dir(type) if callable(getattr(type, func))]\n",
+    "#print(method_list)\n",
+    "import json\n",
+    "run_options = json.loads(opt_run.run_options.json())\n",
+    "\n",
+    "batch_size = 1\n",
+    "if 'batch_size' in run_options.keys():\n",
+    "    batch_size = run_options['batch_size']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "40ebf5cd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:29.735293Z",
+     "iopub.status.busy": "2024-01-18T10:09:29.735136Z",
+     "iopub.status.idle": "2024-01-18T10:09:36.278368Z",
+     "shell.execute_reply": "2024-01-18T10:09:36.269082Z"
+    },
+    "papermill": {
+     "duration": 6.549972,
+     "end_time": "2024-01-18T10:09:36.283001",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:29.733029",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/conda_env/MSFlow-BoTorch-44b6c04a7707e21b815078bc79a67588/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html\n",
+      "  from .autonotebook import tqdm as notebook_tqdm\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "torch.Size([9, 1])\n",
+      "tensor([[10.5000],\n",
+      "        [12.3000],\n",
+      "        [11.7000],\n",
+      "        [25.5000],\n",
+      "        [28.0000],\n",
+      "        [15.0000],\n",
+      "        [13.5000],\n",
+      "        [25.0000],\n",
+      "        [26.8000]], dtype=torch.float64)\n",
+      "torch.Size([9, 1])\n",
+      "tensor([[910.6302],\n",
+      "        [955.2309],\n",
+      "        [934.0850],\n",
+      "        [977.3217],\n",
+      "        [918.4279],\n",
+      "        [962.6146],\n",
+      "        [959.1759],\n",
+      "        [979.7015],\n",
+      "        [946.5538]], dtype=torch.float64)\n",
+      "batch_size=1.0\n",
+      "Candidates (raw):\n",
+      "tensor([[21.9115]])\n",
+      "   Temperature (Celsius)  Biomass Yield (g/m3) opt_run_id\n",
+      "0              21.911505                   NaN        218\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "# 4. Do BO\n",
+    "import torch\n",
+    "from botorch.models import SingleTaskGP\n",
+    "from botorch.fit import fit_gpytorch_mll\n",
+    "from botorch.utils import standardize\n",
+    "from gpytorch.mlls import ExactMarginalLogLikelihood\n",
+    "\n",
+    "from botorch.models.transforms.input import Normalize\n",
+    "from botorch.models.transforms.outcome import Standardize\n",
+    "\n",
+    "inputs = [p for p in parameters if p.outcome == False and p.timestamp == False]\n",
+    "outcome = [p for p in parameters if p.outcome == True][0]\n",
+    "X = dataset[[i.parameter_text for i in inputs]]\n",
+    "Y = dataset[[outcome.parameter_text]]\n",
+    "train_X = torch.tensor(X.to_numpy(dtype=np.float64))\n",
+    "train_Y = torch.tensor(Y.to_numpy(dtype=np.float64))\n",
+    "#train_Y = standardize(train_Y)\n",
+    "print(train_X.shape)\n",
+    "print(train_X)\n",
+    "print(train_Y.shape)\n",
+    "print(train_Y)\n",
+    "\n",
+    "gp = SingleTaskGP(train_X, train_Y, input_transform=Normalize(d=train_X.shape[-1]), outcome_transform=Standardize(m=train_Y.shape[-1]))\n",
+    "\n",
+    "mll = ExactMarginalLogLikelihood(gp.likelihood, gp)\n",
+    "fit_gpytorch_mll(mll)\n",
+    "\n",
+    "#from botorch.acquisition import UpperConfidenceBound\n",
+    "#UCB = UpperConfidenceBound(gp, beta=0.1)\n",
+    "\n",
+    "from botorch.optim import optimize_acqf\n",
+    "\n",
+    "from botorch import fit_gpytorch_mll\n",
+    "from botorch.acquisition.monte_carlo import (\n",
+    "    qExpectedImprovement,\n",
+    "    qNoisyExpectedImprovement,\n",
+    ")\n",
+    "from botorch.sampling.normal import SobolQMCNormalSampler\n",
+    "from botorch.exceptions import BadInitialCandidatesWarning\n",
+    "\n",
+    "upper_bounds = torch.tensor([p.upper_bound for p in inputs])\n",
+    "lower_bounds = torch.tensor([p.lower_bound for p in inputs])\n",
+    "bounds = torch.stack([lower_bounds, upper_bounds])\n",
+    "print(f\"batch_size={batch_size}\")\n",
+    "\n",
+    "SMOKE_TEST = False\n",
+    "MC_SAMPLES = 256 if not SMOKE_TEST else 32\n",
+    "qmc_sampler = SobolQMCNormalSampler(sample_shape=torch.Size([MC_SAMPLES]))\n",
+    "\n",
+    "qNEI = qNoisyExpectedImprovement(\n",
+    "    model=gp,\n",
+    "    X_baseline=train_X,\n",
+    "    sampler=qmc_sampler,\n",
+    ")\n",
+    "candidates, acq_value = optimize_acqf(\n",
+    "    acq_function=qNEI, bounds=bounds, q=int(batch_size), num_restarts=5, raw_samples=20,\n",
+    ")\n",
+    "candidates  # tensor([0.4887, 0.5063])\n",
+    "print(\"Candidates (raw):\")\n",
+    "print(candidates.detach())\n",
+    "\n",
+    "candidates = pd.DataFrame(candidates.numpy())\n",
+    "candidates.columns = [input.parameter_text for input in inputs]\n",
+    "candidates[outcome.parameter_text] = np.nan\n",
+    "candidates[\"opt_run_id\"] = opt_run_id\n",
+    "\n",
+    "print(candidates)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "419baa1e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-01-18T10:09:36.287199Z",
+     "iopub.status.busy": "2024-01-18T10:09:36.286920Z",
+     "iopub.status.idle": "2024-01-18T10:09:36.613764Z",
+     "shell.execute_reply": "2024-01-18T10:09:36.613330Z"
+    },
+    "papermill": {
+     "duration": 0.330924,
+     "end_time": "2024-01-18T10:09:36.615624",
+     "exception": false,
+     "start_time": "2024-01-18T10:09:36.284700",
+     "status": "completed"
+    },
+    "pycharm": {
+     "name": "#%%\n"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# 5. Upload candidates\n",
+    "client.experiment_update_data(project, candidates)\n"
    ]
   }
  ],
@@ -97,19 +475,19 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 1.05507,
-   "end_time": "2024-01-11T17:36:12.256437",
+   "duration": 11.492893,
+   "end_time": "2024-01-18T10:09:37.342563",
    "environment_variables": {},
    "exception": null,
    "input_path": "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/modules/fetch_dataset/resources/usr/bin/run_BO.ipynb",
    "output_path": "/Users/jakobzeitler/MatterhornStudioLocalDev/BoTorchGeneralOptApp/modules/fetch_dataset/resources/usr/bin/output.ipynb",
    "parameters": {
     "base_url": "https://mhs.ngrok.app/",
-    "opt_run_id": "217",
+    "opt_run_id": "218",
     "project_id": "181",
     "token": "1e9549ad7e940941de51ddff92b1dc9cbe896e98b039644b9eff165e0dec9e55"
    },
-   "start_time": "2024-01-11T17:36:11.201367",
+   "start_time": "2024-01-18T10:09:25.849670",
    "version": "2.4.0"
   }
  },

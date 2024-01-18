@@ -30,3 +30,13 @@ A proof-of-concept pipeline for performing hyperparameter optimization of machin
 Note: the first time you execute the pipeline, Nextflow will take a few minutes to download the pipeline code from this GitHub repository and any related software dependencies (e.g. conda packages or Docker images).
 
 The hyperopt pipeline uses Python (>=3.10) and several Python packages for machine learning and data science. These dependencies are defined in the `conda.yml` file.
+
+# Docker Build
+
+DOCKER_DEFAULT_PLATFORM="linux/amd64" 
+
+docker build --platform="linux/amd64" --pull . -t matterhornstudio/mhsflow-image-v2-linuxamd64:latest
+
+docker image inspect matterhornstudio/mhsflow-image-v2-linuxamd64
+
+docker push matterhornstudio/mhsflow-image-v2-linuxamd64:latest  

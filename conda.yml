@@ -7,9 +7,9 @@ dependencies:
   - pandas
   - pip
   - git
-  - papermill
   - jupyterlab
   - pip:
+      - papermill
       - git+https://github.com/matterhorn-studio/MHSapi.git
       - git+https://github.com/pytorch/botorch.git
       #-e /Users/jakobzeitler/MatterhornStudioLocalDev/MHSapi/MHSapi
