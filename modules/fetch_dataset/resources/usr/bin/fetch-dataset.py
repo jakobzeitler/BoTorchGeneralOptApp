@@ -28,6 +28,8 @@ if __name__ == '__main__':
     # print output to the console
     module_directory = current_working_directory.split("work")[0] + 'modules/fetch_dataset/resources/usr/bin/'
     print(module_directory)
+    import glob
+    print(glob.glob(module_directory + "/*"))
     pm.execute_notebook(
         module_directory + 'run_BO.ipynb',
         module_directory + 'output.ipynb',
