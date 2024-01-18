@@ -27,11 +27,10 @@ if __name__ == '__main__':
     current_working_directory = os.getcwd()
     # print output to the console
     module_directory = current_working_directory.split("work")[0] + 'modules/fetch_dataset/resources/usr/bin/'
+    module_directory = os.path.dirname(os.path.realpath(__file__)) + "/"
     print(module_directory)
     import glob
     print(glob.glob(module_directory + "/*"))
-    print(os.path.dirname(os.path.realpath(__file__)))
-    print(glob.glob(os.path.dirname(os.path.realpath(__file__)) + "/*"))
     pm.execute_notebook(
         module_directory + 'run_BO.ipynb',
         module_directory + 'output.ipynb',
